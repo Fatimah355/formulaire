@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaires</title>
+</head>
+<body>
+    <h1>Les formulaires</h1>
+    <form action="traitement.php">
+     <fieldset id="section1">
+        <legend>Informations personnelles</legend>
+        <label for="prenom">entrer votre prenom</label>
+       <input type="text" name="prenom" id="prenom" autocomplete="on" placeholder="ex:Fatimah" required="required"><br><br>
+
+       <label for="nombre">choisissez un nombre entre 1 et 10</label>
+       <input type="number" name="num" id="num" min="1" max="10"><br><br>
+
+       <label for="nom">entrer votre nom</label>
+       <input type="text" name="nom" id="nom" autofocus="autofocus"><br><br>
+
+       <label for="pass">entrer votre mot de passe</label>
+       <input type="password" name="password" id="pass"><br><br>
+
+       <label for="naissance">Veiller entre votre date de naissance</label>
+       <input type="date" name="birthday" id="birthday"><br><br>
+
+       <label for="email">veuiller entrer votre mail</label>
+       <input type="email" name="email" id="email"><br><br>
+        
+       <label for="site">entree votre site</label>
+       <input type="url" name="g" id="h"><br><br>
+
+       <label for="numero">enter your phone number</label>
+       <input type="number" name="num" id="num"><br><br>
+     </fieldset>
+     <fieldset id="section2">
+        <legend>autres Informations</legend>
+       Homme et Femme?<br>
+       <label for="homme">un homme</label>
+       <input type="radio" name="sex" id="homme" value="homme"><br>
+
+       <label for="femme">une femme</label>
+       <input type="radio" name="sex" id="femme" value="femme"><br><br>
+       
+       Majeur et Mineur?<br>
+
+       <label for="majeur">Majeur</label>
+       <input type="radio" name="fall" id="Mineur" value="majeur"><br>
+
+       <label for="mineur">Mineur</label>
+       <input type="radio" name="fall" id="mineur" value="mineur"><br><br>
+
+       Quel sport faites vous?<br>
+       <input type="checkbox" name="sport" id="sport" value="natation">
+       <label for="natation">natation</label><br>
+
+       <input type="checkbox" name="sport" id="course" value="course">
+       <label for="couse">course</label><br><br>
+      <!-- on met l input avant le label pour mettre les carrees devant-->
+       
+      ou habitez vous?<br>
+<select name="pays" id="pays">
+    <optgroup label="EUROPE">
+         <option value="canada">canada</option>
+         <option value="france">france</option>
+    </optgroup>
+    <optgroup label="Afrique">
+       <option value="senegal">senegal</option>
+       <option value="togo">togo</option>
+    </optgroup>
+ </select> <br>
+</fieldset>
+       <label for="prez">petite presentation</label>
+       <textarea name="prez" id="prez"></textarea><br><br>
+      
+      
+       <input type="submit" value="envoyer">
+       </form>
+</body>
+</html>
